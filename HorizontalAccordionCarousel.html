@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="Carousel.js"></script>
+<script type="text/javascript" src="HorizontalAccordionCarousel.js"></script>
+<style type="text/css">
+.horizontal_accordion_carousel_thumbnail,
+.horizontal_accordion_carousel_main_image {
+	display : inline-block; 
+	height : 140px;
+}
+.horizontal_accordion_carousel_thumbnail {
+	width : 100px;
+}
+.horizontal_accordion_carousel_main_image {
+	width : 230px;
+}
+.carousel_item a {
+	font-size: 0px;
+	word-spacing: 0px;
+}
+</style>
+</head>
+<body>
+<div id="example_carousel" class="carousel_slide">
+	<div class="carousel_listbox">
+		<div class="carousel_item">
+			<a href="#">
+				<span class="horizontal_accordion_carousel_thumbnail" style="background-color: hsl(195, 100%, 90%);">&nbsp;</span>
+				<span class="horizontal_accordion_carousel_main_image" style="background-color: hsl(195, 100%, 50%);">&nbsp;</span>
+			</a>
+		</div>
+		<div class="carousel_item">
+			<a href="#">
+				<span class="horizontal_accordion_carousel_thumbnail" style="background-color: hsl(210, 100%, 90%);">&nbsp;</span>
+				<span class="horizontal_accordion_carousel_main_image" style="background-color: hsl(210, 100%, 50%);">&nbsp;</span>
+			</a>
+		</div>
+		<div class="carousel_item">
+			<a href="#">
+				<span class="horizontal_accordion_carousel_thumbnail" style="background-color: hsl(225, 100%, 90%);">&nbsp;</span>
+				<span class="horizontal_accordion_carousel_main_image" style="background-color: hsl(225, 100%, 50%);">&nbsp;</span>
+			</a>
+		</div>
+		<div class="carousel_item">
+			<a href="#">
+				<span class="horizontal_accordion_carousel_thumbnail" style="background-color: hsl(240, 100%, 90%);">&nbsp;</span>
+				<span class="horizontal_accordion_carousel_main_image" style="background-color: hsl(240, 100%, 50%);">&nbsp;</span>
+			</a>
+		</div>
+		<div class="carousel_item">
+			<a href="#">
+				<span class="horizontal_accordion_carousel_thumbnail" style="background-color: hsl(255, 100%, 90%);">&nbsp;</span>
+				<span class="horizontal_accordion_carousel_main_image" style="background-color: hsl(255, 100%, 50%);">&nbsp;</span>
+			</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var ca = new HorizontalAccordionCarousel({
+	slide : 'example_carousel',
+	interval : 3,
+	duration : 250
+});
+</script>
+</body>
+</html>
